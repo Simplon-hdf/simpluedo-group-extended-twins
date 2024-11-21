@@ -1,20 +1,29 @@
-# Règles de gestions
+# Règles de gestion
 
+## Utilisateurs et rôles
 - RG01: Chaque utilisateur doit choisir un rôle (maître du jeu, détective ou observateur)
 - RG02: Les détectives doivent incarner un personnage.
-- RG03: Il y a 6 personnages
-- RG04: L'observateur n'incarne pas de personnages
-- RG05: Le maître du jeu n'incarne pas de personnages
-- RG06: Six armes sont disponibles
-- RG07: La partie se déroule dans un manoir 
-- RG08: Le manoir est composé de neuf salles
-- RG09: Une salle contient 0 ou N objets
-- RG10: Un personnage peut visiter une pièce plusieurs fois
-- RG11: Un personnage ne peut être associé qu'à un seul utilisateur
-- RG12: Un objet se trouve dans une pièce
-- RG13: L'heure d'entrée dans une pièce d'un personnage est enregistrée
-- RG14: La limite de détective est de 6
-- RG15: Chaque personnage se trouve dans une pièce à la fois
-- RG16: Tous les personnages commencent dans la même pièce
-- RG17: Les personnages peuvent se déplacer de salle en salle
-- RG18: Le maître du jeu peut ajouter, modifier et supprimer une pièce
+- RG03: Les détectives sont **limités** au nombre de 6
+- RG04: L'observateur n'incarne **pas** de personnages
+- RG05: Le maître du jeu n'incarne **pas** de personnages
+- RG06: Un personnage ne peut être associé qu'à **un seul** utilisateur
+
+## Personnages
+- RG07: Il y a **6** personnages
+- RG08: Un personnage peut visiter une pièce **plusieurs** fois
+- RG09: Chaque personnage se trouve dans **une** pièce à la fois
+- RG10: Tous les personnages commencent dans la **même** pièce
+- RG11: Les personnages peuvent se déplacer de salle en salle
+
+## Objets et armes
+- RG12: **Six** armes sont disponibles
+- RG13: Une salle contient **0** ou **N** objets
+- RG14: Un objet se trouve dans une pièce
+
+## Lieux
+- RG15: La partie se déroule dans un **manoir** 
+- RG16: Le manoir est composé de **neuf** salles
+
+## Gestion du jeu
+- RG17: L'heure d'entrée dans une pièce d'un personnage est **enregistrée**
+- RG18: Le maître du jeu peut **ajouter**, **modifier** et **supprimer** une pièce
