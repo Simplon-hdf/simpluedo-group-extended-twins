@@ -6,7 +6,7 @@ CREATE TYPE roles_enum AS ENUM ('Maître du jeu', 'Observateur', 'Utilisateur');
 
 CREATE TABLE roles (
     id_roles VARCHAR(50) PRIMARY KEY,
-    role role_enum UNIQUE
+    role roles_enum UNIQUE
 );
 CREATE TABLE utilisateurs (
     uuid_users UUID,
