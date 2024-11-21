@@ -26,4 +26,3 @@
 
 ## Gestion du jeu
 - RG17: L'heure d'entrée dans une pièce d'un personnage est **enregistrée**
-- RG18: Le maître du jeu peut **ajouter**, **modifier** et **supprimer** une pièce
