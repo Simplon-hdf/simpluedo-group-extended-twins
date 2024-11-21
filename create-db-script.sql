@@ -4,11 +4,10 @@ CREATE DATABASE simpluedo;
 GRANT all privileges ON DATABASE simpluedo to simpluedo;
 
 \c simpluedo;
-CREATE TYPE roles_enum AS ENUM ('Maître du jeu', 'Observateur', 'Utilisateur');
 
 CREATE TABLE roles (
     id_roles VARCHAR(50) PRIMARY KEY,
-    nom_role roles_enum UNIQUE
+    nom_role VARCHAR(50) PRIMARY KEY,
 );
 
 CREATE TABLE personnages (
