@@ -16,3 +16,11 @@ INSERT INTO salles (nom_salle) VALUES
 ('Jardin d\'hiver'),
 ('Bureau'),
 ('Salle de billard');
+
+INSERT INTO personnages (nom_perso) VALUES
+('Mademoiselle Rose'),
+('Colonel Moutarde'),
+('Révérend Olive'),
+('Madame Leblanc'),
+('Professeur Violet'),
+('Madame Pervenche');
