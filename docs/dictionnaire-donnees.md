@@ -1,6 +1,6 @@
 ## Dictionnaire de données
 
-Nom            | Type      | Description
+Nom       | Type      | Description
 -------------- | --------- | ------------
 uuid_user      | UUID      | Identifiant unique de l'utilisateur
 pseudo         | text    | Pseudo de l'utilisateur
