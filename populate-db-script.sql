@@ -24,3 +24,8 @@ INSERT INTO personnages (nom_perso) VALUES
 ('Madame Leblanc'),
 ('Professeur Violet'),
 ('Madame Pervenche');
+
+INSERT INTO roles (id_role, nom_role) VALUES
+('MJ', 'Maitre du jeu'),
+('ENQ', 'Enqueteur'),
+('OBS', 'Observateur');
