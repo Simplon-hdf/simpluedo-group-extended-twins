@@ -7,7 +7,7 @@ GRANT all privileges ON DATABASE simpluedo to simpluedo;
 
 CREATE TABLE roles (
     id_roles VARCHAR(50) PRIMARY KEY,
-    nom_role VARCHAR(50) UNIQUE,
+    nom_role VARCHAR(50) UNIQUE
 );
 
 CREATE TABLE personnages (
