@@ -6,6 +6,7 @@
 - [Fichier looping](/docs/BDD/mcd.loo)
 - [Script SQL de génération de la BDD](/sql/create-db-script.sql)
 - [Script SQL permettant d'intégrer les données](/sql/populate-db-script.sql)
+- [Script SQL permettant d'intégrer les triggers](/sql/triggers.sql)
 - [Guide d'utilisation des scripts]
 - [Requêtes SQL dans le README.md]
 
