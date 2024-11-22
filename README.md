@@ -1,11 +1,40 @@
-# simpluedo-group-extended-twins
-Brief 'Simpluedo" du groupe "Extended Twins" (Yohan et Gabriel)
+# Sommaire
+- [Dictionnaire de données](/docs/dictionnaire-donnees.md)
+- [MCD](/docs/BDD/MCD.png)
+- [MLD](/docs/BDD/MLD.png)
+- [MPD](/docs/BDD/MPD.png)
+- [Fichier looping](/docs/BDD/mcd.loo)
+- [Script SQL de génération de la BDD](/sql/create-db-script.sql)
+- [Script SQL permettant d'intégrer les données](/sql/populate-db-script.sql)
+- [Script SQL permettant d'intégrer les triggers](/sql/triggers.sql)
+- [Script SQL permettant d'intégrer les procedures](/sql/procedures-db-script.sql)
+- [Contexte du projet](#contexte-du-projet)
+- [Guide d'utilisation des scripts](#utilisation-de-la-base-de-données)
+- [Requêtes SQL dans le README.md](#requêtes-à-réaliser)
+
+# Contexte du projet
+En tant que développeur, vous devez réaliser un système informatique permettant de gérer une partie de jeu de société que vous avez envie de réaliser avec vos amis.<br>
+
+Ce jeu de société est basé sur le Cluedo avec des personnages que les joueurs déplacent au sein d'un manoir, dans les différentes pièces de celui-ci.
+<br>
+Vous devez donc créer un environnement permettant de stocker, pour une partie donnée d'un jeu, les déplacements des personnages de chaque joueur.
+<br>
+Comme Rome ne s'est pas construite en un jour, vous allez commencer par la mise en place d'un site web permettant de procéder à différentes opérations de recherches à propos de l'emplacement des différents personnages.
+<br>
+Sauf que la partie site web n'est pas pour tout de suite.
+<br>
+Avant cela, vous avez besoin d'une base de données pour le stockage. Et donc de la concevoir et de la mettre en place !
 
 # Utilisation de la base de données
-## Utiliser le script de création de la base de données
+## Utiliser les scripts de création de la base de données
 ```
 psql d-postgres -U postgres -f <sql-file-path>
 ```
+Remplacer <sql-file-path> par (dans l'ordre):
+- create-db-script.sql
+- populate-dp-script.sql
+- triggers.sql
+- procedures-db-script.sql<br>
 Pour les utilisateurs mac pensez a remplacer "-U postgres" par "-U <votre-nom-de-superuser-postgres>"!!!
 
 # Requêtes à réaliser

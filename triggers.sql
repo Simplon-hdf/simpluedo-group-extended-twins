@@ -1,15 +1,15 @@
 \c simpluedo
-DROP FUNCTION create_position_table_function();
-CREATE OR REPLACE FUNCTION create_position_table_function() RETURNS trigger AS $$
+CREATE OR REPLACE FUNCTION update_position_function()
+RETURNS TRIGGER AS $$
 BEGIN
-    CREATE TABLE positions (
-        id_position serial PRIMARY KEY,
-        id_salle INTEGER REFERENCES salles(id_salle),
-        id_perso INTEGER REFERENCES personnages(id_perso)
-    );
+    INSERT INTO positions (id_salle, id_perso)
+    VALUES (NEW.id_salle, NEW.id_perso);
+    RETURN NEW;
 END;
 $$ LANGUAGE plpgsql;
 
-CREATE TRIGGER create_postition_table_trigger
-    AFTER UPDATE ON visiter
-    EXECUTE FUNCTION create_position_table_function();
+CREATE TRIGGER update_position_trigger
+AFTER INSERT ON visiter
+FOR EACH ROW
+EXECUTE FUNCTION update_position_function();
+

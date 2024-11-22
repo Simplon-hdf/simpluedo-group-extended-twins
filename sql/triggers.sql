@@ -1,3 +1,4 @@
+
 -- Se connecter à la base de données simpluedo
 \c simpluedo
 
@@ -27,9 +28,11 @@ BEGIN
         WHERE id_salle = NEW.id_salle AND id_perso = NEW.id_perso AND heure_depart IS NULL;
     END IF;
     -- Retourner la nouvelle ligne pour indiquer que le trigger a été exécuté avec succès
+
     RETURN NEW;
 END;
 $$ LANGUAGE plpgsql;
+
 
 -- Créer le trigger log_update_visiter
 -- Ce trigger est déclenché après chaque insertion ou mise à jour dans la table visiter
