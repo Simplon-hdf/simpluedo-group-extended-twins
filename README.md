@@ -7,6 +7,7 @@
 - [Script SQL de génération de la BDD](/sql/create-db-script.sql)
 - [Script SQL permettant d'intégrer les données](/sql/populate-db-script.sql)
 - [Script SQL permettant d'intégrer les triggers](/sql/triggers.sql)
+- [Script SQL permettant d'intégrer les procedures](/sql/procedures-db-script.sql)
 - [Guide d'utilisation des scripts]
 - [Requêtes SQL dans le README.md]
 
