@@ -8,7 +8,7 @@
 - [Script SQL permettant d'intégrer les données](/sql/populate-db-script.sql)
 - [Script SQL permettant d'intégrer les triggers](/sql/triggers.sql)
 - [Script SQL permettant d'intégrer les procedures](/sql/procedures-db-script.sql)
-- [Guide d'utilisation des scripts]
+- [Guide d'utilisation des scripts](#utilisation-de-la-base-de-données)
 - [Requêtes SQL dans le README.md]
 
 # Contexte du projet
