@@ -1,4 +1,12 @@
 # Sommaire
+- [Dictionnaire de données]
+- [MCD]
+- [MLD]
+- [MPD]
+- [Script SQL de génération de la BDD]
+- [Script SQL permettant d'intégrer les données]
+- [Guide d'utilisation des scripts]
+- [Requêtes SQL dans le README.md]
 
 # Contexte du projet
 En tant que développeur, vous devez réaliser un système informatique permettant de gérer une partie de jeu de société que vous avez envie de réaliser avec vos amis.<br>
