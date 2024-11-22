@@ -1,7 +1,6 @@
 DROP DATABASE simpluedo;
 CREATE USER simpluedo WITH ENCRYPTED PASSWORD 'trouvemoi';
 CREATE DATABASE simpluedo;
-GRANT all privileges ON DATABASE simpluedo to simpluedo;
 
 \c simpluedo;
 
@@ -39,3 +38,5 @@ CREATE TABLE objets (
     nom_objet VARCHAR(50) UNIQUE,
     id_salle INTEGER REFERENCES salles(id_salle)
 );
+
+GRANT all privileges ON DATABASE simpluedo to simpluedo;

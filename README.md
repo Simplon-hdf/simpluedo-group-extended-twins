@@ -31,7 +31,9 @@ OR (v.heure_depart BETWEEN '8:00' AND '9:00')
 OR (v.heure_arrivee < '8:00' AND v.heure_depart > '9:00');
 ```
 - Afficher les pièces où aucun personnage n'est allé
-
+```
+SELECT * 
+```
 - Compter le nombre d'objets par pièce
 
 - Ajouter une pièce
