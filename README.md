@@ -16,10 +16,10 @@ SELECT * FROM personnages;
 ```
 - Lister chaque joueur et son personnage associé
 ```
-SELECT * FORM utilisateur u
-INNER JOIN roles r ON r.id_roles = p.id_roles
-INNER JOIN personnage p ON p.id_perso = p.id_perso
-WHERE r.nom_role = 'Enqueteur'
+SELECT * FROM utilisateurs u
+INNER JOIN roles r ON r.id_roles = u.id_roles
+INNER JOIN personnages p ON p.id_perso = u.id_perso
+WHERE r.nom_role = 'Enqueteur';
 
 ```
 - Afficher la liste des personnages présents dans la cuisine entre 08:00 et 09:00
@@ -32,8 +32,11 @@ OR (v.heure_arrivee < '8:00' AND v.heure_depart > '9:00');
 ```
 - Afficher les pièces où aucun personnage n'est allé
 ```
-SELECT * 
+SELECT * FROM pieces p
+INNER JOIN personnages pe on p.id_piece = pe.id_piece
+WHERE pe.id_piece IS NULL;
 ```
+
 - Compter le nombre d'objets par pièce
 
 - Ajouter une pièce
