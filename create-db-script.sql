@@ -20,7 +20,7 @@ CREATE TABLE salles (
 );
 
 CREATE TABLE utilisateurs (
-    uuid_users UUID PRIMARY KEY,
+    uuid_users UUID PRIMARY KEY DEFAULT,
     pseudo_users VARCHAR(50),
     id_roles VARCHAR(50) REFERENCES roles(id_roles),
     id_perso INTEGER REFERENCES personnages(id_perso)

@@ -16,9 +16,9 @@ SELECT * FROM personnages;
 ```
 - Lister chaque joueur et son personnage associé
 ```
-SELECT * FORM utilisateur u
+SELECT * FORM utilisateurs u
 INNER JOIN roles r ON r.id_roles = p.id_roles
-INNER JOIN personnage p ON p.id_perso = p.id_perso
+INNER JOIN personnage p ON p.id_perso = u.id_perso
 WHERE r.nom_role = 'Enqueteur'
 
 ```
@@ -32,7 +32,10 @@ OR (v.heure_arrivee < '8:00' AND v.heure_depart > '9:00');
 ```
 - Afficher les pièces où aucun personnage n'est allé
 ```
-SELECT * 
+SELECT * FROM salles s
+WHERE NOT EXISTS (  SELECT 1 
+                    FROM visiter v
+                    WHERE v.id_salle = s.id_salle);
 ```
 - Compter le nombre d'objets par pièce
 
