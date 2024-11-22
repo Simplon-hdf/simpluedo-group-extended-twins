@@ -18,7 +18,7 @@ SELECT * FROM personnages;
 ```
 SELECT * FROM utilisateurs u
 INNER JOIN roles r ON r.id_roles = u.id_roles
-INNER JOIN personnages p ON r.id_perso = p.id_perso
+INNER JOIN personnages p ON p.id_perso = u.id_perso
 WHERE r.nom_role = 'Enqueteur';
 
 ```
