@@ -1,5 +1,5 @@
 # Sommaire
-- [Dictionnaire de données]
+- [Dictionnaire de données](/docs/dictionnaire-donnees.md)
 - [MCD]
 - [MLD]
 - [MPD]
