@@ -38,3 +38,4 @@ INSERT INTO utilisateurs (pseudo_users, id_roles, id_perso) VALUES
 ('user1', 1, null),
 ('user2', 2, 1),
 ('user3', 3, null);
+
