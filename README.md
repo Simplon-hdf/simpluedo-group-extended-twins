@@ -12,7 +12,7 @@
 - [Script SQL permettant d'intégrer les procedures](/sql/procedures-db-script.sql)
 - [Contexte du projet](#contexte-du-projet)
 - [Guide d'utilisation des scripts](#utilisation-de-la-base-de-données)
-- [Requêtes à réaliser](#requêtes-à-réaliser)
+- [Requêtes SQL à réaliser](#requêtes-à-réaliser)
 
 # Contexte du projet
 En tant que développeur, vous devez réaliser un système informatique permettant de gérer une partie de jeu de société que vous avez envie de réaliser avec vos amis.<br>
