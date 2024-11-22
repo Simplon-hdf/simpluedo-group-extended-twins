@@ -34,13 +34,30 @@ OR (v.heure_arrivee < '8:00' AND v.heure_depart > '9:00');
 ```
 SELECT * FROM pieces p
 INNER JOIN personnages pe on p.id_piece = pe.id_piece
-WHERE pe.id_piece IS NULL;
+WHERE pe.id_piece IS NULL;FROM salles s
+WHERE NOT EXISTS (  SELECT 1 
+                    FROM visiter v
+                    WHERE v.id_salle = s.id_salle);
 ```
 
 - Compter le nombre d'objets par pièce
-
+```
+SELECT COUNT(*) FROM visiter v
+INNER JOIN salles s ON v.id_salle = s.id_salle
+GROUP BY salle.nom_salle
+```
 - Ajouter une pièce
-
+```
+INSERT INTO salles (id_salle, nom_salle) VALUES
+(1, 'Salle de bal');
+```
 - Modifier un objet
-
+```
+UPDATE salles SET nom_salle = 'Salle de bain'
+WHERE nom_salle = 'Salle de bal';
+```
 - Supprimer une pièce
+```
+DELETE FROM salles
+WHERE salle = 'Salle de bal';
+```
