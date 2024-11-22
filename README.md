@@ -1,3 +1,5 @@
+# Sommaire
+
 # Contexte du projet
 En tant que développeur, vous devez réaliser un système informatique permettant de gérer une partie de jeu de société que vous avez envie de réaliser avec vos amis.<br>
 
