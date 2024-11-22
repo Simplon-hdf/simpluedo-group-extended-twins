@@ -29,10 +29,12 @@ Avant cela, vous avez besoin d'une base de données pour le stockage. Et donc de
 
 # Utilisation de la base de données
 ## Utiliser les scripts de création de la base de données
+
+Pour créer la base de données, il est nécessaire d'exécuter le script suivant via PostgreSQL :
 ```
 psql d-postgres -U postgres -f <sql-file-path>
 ```
-Remplacer `<sql-file-path>` par (dans l'ordre):
+Tip : remplacer `<sql-file-path>` par (dans l'ordre):
 - create-db-script.sql
 - populate-db-script.sql
 - triggers.sql
