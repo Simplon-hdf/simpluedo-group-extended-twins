@@ -30,7 +30,7 @@ Avant cela, vous avez besoin d'une base de données pour le stockage. Et donc de
 ```
 psql d-postgres -U postgres -f <sql-file-path>
 ```
-Remplacer <sql-file-path> par (dans l'ordre):
+Remplacer sql-file-path par (dans l'ordre):
 - create-db-script.sql
 - populate-dp-script.sql
 - triggers.sql
